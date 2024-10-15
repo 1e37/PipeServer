@@ -85,8 +85,6 @@ class Program
                         {
                             pipe.Stream.WaitForConnection();
                             Console.WriteLine("Program : Client  on pipe " + pipeName + " Connected Sucessfully!");
-
-
                             using (var reader = new StreamReader(pipe.Stream))
                             using (var writer = new StreamWriter(pipe.Stream))
                             {
