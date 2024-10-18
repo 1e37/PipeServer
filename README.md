@@ -1,6 +1,6 @@
 # PipeServer
  --unmaintained--<br>
-This is a Multithread PipeServer. It is possible to spawn n times a pipes, base on the amount of configs avaliable in the List _configs.
+This is a Multi-Process PipeServer. It is possible to spawn n times a pipes, base on the amount of configs avaliable in the List _configs.
 The first pipe is reserved as main communication pipe to the frontend.
 Based on StreamReader and StreamWriter we are able to let different programs communicate, which support the WIN32 API.
 The pipe0_bridge_win32api.py is a demo client, which connects to the pipe0. Its ment to send commands to the PipeServer.
